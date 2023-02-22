@@ -1,1 +1,25 @@
-<h1>hey</h1>
+<div class='container'>
+    <div class='buttonDv'>
+        <%= link_to 'Add Post', new_food_path %>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th> Foods </th>
+                <th> Measurement Unit </th>
+                <th> Unit Price </th>
+                <th> Quantity </th>
+                <th> Actions </th>
+            </tr>
+            <% @foods.each do |food| %>
+                <tr>
+                    <td> <%= food.name %> </td>
+                    <td> <%= food.measuerment_unit %> </td>
+                    <td> <%= food.price %> </td>
+                    <td> <%= food.quantity %> </td>
+                    <td> <button class='buttonDlt'> delete </button> </td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+</div>
