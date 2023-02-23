@@ -1,6 +1,6 @@
 class FoodsController < ApplicationController
     def index
-        @foods = Food.all
+        @foods = Food.includes(:user)
     end
 
     def new
@@ -10,6 +10,7 @@ class FoodsController < ApplicationController
     def create
       @food = Food.new(food_params)
       @food.user = current_user
+      @food.user_id = current_user.id
       if @food.save
         flash[:notice] = 'food successfully created!'
         redirect_to root_path(current_user)
@@ -20,6 +21,6 @@ class FoodsController < ApplicationController
     end
 
     def food_params
-        params.permit(:name, :measuerment_unit, :price, :quantity)
+        params.require(:new_food).permit(:name, :measuerment_unit, :price, :quantity)
     end
 end

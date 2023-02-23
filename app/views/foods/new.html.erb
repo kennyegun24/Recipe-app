@@ -1,24 +1,24 @@
 <h1 >Add A New Post</h1>
-<%= form_with model: @food, url: foods_path, data: {turbo: false} do |form| %>
+<%= form_with model: @food, url: foods_path, method: :post, local: true, scope: :new_food do |form| %>
   <div >
     <div >
-      <%= form.label :title %><br>
+      <%= form.label :name %><br>
       <%= form.text_field :name %>
     </div>
 
     <div >
       <%= form.label :measuerment_unit %><br>
-      <%= form.text_area :measuerment_unit %>
+      <%= form.number_field :measuerment_unit %>
     </div>
 
     <div >
       <%= form.label :price %><br>
-      <%= form.text_area :price %>
+      <%= form.number_field :price %>
     </div>
 
     <div >
       <%= form.label :quantity %><br>
-      <%= form.text_area :quantity %>
+      <%= form.number_field :quantity %>
     </div>
     <%= form.submit "Click to Add Food" %>
   </div>
