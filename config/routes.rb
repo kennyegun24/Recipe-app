@@ -11,8 +11,7 @@ Rails.application.routes.draw do
   # get 'general_shopping_lists', to: 'general_shopping#index'
 
   resources :foods, only: [:new, :create]
-  resources :recipes, only: [:index, :show, :new, :create]
+  resources :recipes, only: [:index, :show, :new, :create, :destroy]
   resources :public_recipes, only: [:index]
-  resources :likes, only: [:create]
-  
+  resources :likes, only: [:create]  
 end
