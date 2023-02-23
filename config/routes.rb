@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources :foods, only: [:new, :create]
   resources :recipes, only: [:index, :show, :new, :create]
-  resources :comments, only: [:new, :create]
+  resources :public_recipes, only: [:index]
   resources :likes, only: [:create]
   
 end
