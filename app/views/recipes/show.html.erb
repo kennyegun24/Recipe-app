@@ -1,6 +1,33 @@
-<h1>show recipe details</h1>
 
-<%= @recipe.description %>
-<%= @recipe.name %>
-<%= @recipe.preparation_time %>
-<%= @recipe.cooking_time %>
+<div class='container'>
+<h1>show recipe details</h1>
+<div class=''>
+    <div class='linespac'>
+    <p> Recipe: <%= @recipe.name %> </p>
+    <p> Preparation Time: <%= @recipe.preparation_time %> </p>
+    <p> Cooking time:<%= @recipe.cooking_time %> </p>
+    </div>
+    <div class='flex jstcnt'>
+
+    <button class='button2'><%= link_to "Generate Shopping List", shopping_lists_path %> </button>
+    <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe.id) %>
+    </div>
+        <table>
+            <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Actions</th>
+            </tr>
+    <% @recipe.recipe_foods.each do |food| %>
+            <tr>
+            <td><%= food.food.name %></td>
+            <td><%= food.food.quantity %></td>
+            <td><%= food.food.measuerment_unit %></td>
+            <td><button> Modify  Remove</button></td>
+    </tr>
+    <% end %>
+
+        <table>
+</div>
+</div>

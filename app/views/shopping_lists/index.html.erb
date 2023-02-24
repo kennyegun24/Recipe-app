@@ -1,0 +1,23 @@
+<div class='container'>
+<h2 class='head'>general lists</h2>
+
+<div class='flex jstcnt'>
+<span> Total Amount Of Items to Buy: <%= @missing_i.count %> </span>
+<span> Total Value of Items Needed: <%= @total.floor %> </span>
+</div>
+    <table>
+        <tr>
+            <th> Food </th>
+            <th> Quantity </th>
+            <th> Price </th>
+        </tr>
+
+<% @missing_i.each do |food| %>
+    <tr>
+            <td> <%= food[:name] %> </td>
+            <td> <%= food[:quantity] %> </td>
+            <td> <%= food[:price] %> </td>
+        </tr>
+<% end %>
+</table>
+</div>

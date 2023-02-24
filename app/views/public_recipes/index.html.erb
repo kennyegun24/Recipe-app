@@ -1,5 +1,15 @@
-<h1>Public</h1>
-
+<div class='container2'>
+<h1 class='head'>Public</h1>
 <% @recipes.each do |food| %>
-    <%= food.name %>
+    <div class='resDv'>
+    <div class='linespac2'>
+    <p>Meal Name: <%= link_to food.name, recipe_path(food.id) %></p>
+    <p> By: <%= food.user.name %></p>
+</div>
+<div class='linespac2'>
+<p>Preparation Time: <%= food.preparation_time %></p>
+<p>Cooking Time: <%= food.cooking_time %></p>
+</div>
+</div>
 <% end %>
+</div>

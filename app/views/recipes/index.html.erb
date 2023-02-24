@@ -1,6 +1,13 @@
-<h1>recipe</h1>
-
+<h1 class='head'>recipe</h1>
 <% @recipes.each do |food| %>
-    <%= link_to food.name, recipe_path(food.id) %>
-    <%= button_to 'Delete', recipe_path(food), method: :delete %> 
+    <div class='resipe'>
+        <div class='resDv'>
+            <div>
+                <h3 class='rscNm'><%= link_to food.name, recipe_path(food.id) %></h3>
+                <%= button_to 'Delete', recipe_path(food), class:'button', method: :delete %> 
+            </div>
+            <p class='recDsc'><%= food.description %></p>
+        </div>
+    </div>
 <% end %>
+<%= link_to 'Add new recipe', new_recipe_path, class:'link_to' %>

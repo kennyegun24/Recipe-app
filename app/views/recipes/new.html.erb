@@ -1,0 +1,31 @@
+<%= form_with model: @food, url: recipes_path, method: :post, local: true, scope: :new_food do |form| %>
+  <div class='formDiv'>
+  <h1 >Add A New Recipe</h1>
+  <div class='form'>
+      <%= form.label :name %><br>
+    <%= form.text_field :name, class:'formInp'%>
+    </div>
+
+    <div class='form'>
+      <%= form.label :preparation_time %><br>
+      <%= form.number_field :preparation_time, class:'formInp' %>
+    </div>
+
+    <div class='form'>
+      <%= form.label :cooking_time %><br>
+      <%= form.number_field :cooking_time, class:'formInp' %>
+    </div>
+
+    <div class='form'>
+      <%= form.label :description %><br>
+      <%= form.text_field :description, class:'formInp' %>
+    </div>
+
+    <div class='form'>
+      <%= form.label "Should be public?" %><br>
+      <%= form.check_box :public, value: 'true' %>
+    </div>
+
+    <%= form.submit "Click to Add Recipe", class:'addFood' %>
+  </div>
+<% end %>

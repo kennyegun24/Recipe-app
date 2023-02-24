@@ -1,6 +1,6 @@
 <div class='container'>
     <div class='buttonDv'>
-        <%= link_to 'Add Post', new_food_path %>
+        <%= link_to 'Add Food', new_food_path, class:'link' %>
     </div>
     <div>
         <table>
@@ -17,7 +17,7 @@
                     <td> <%= food.measuerment_unit %> </td>
                     <td> <%= food.price %> </td>
                     <td> <%= food.quantity %> </td>
-                    <td> <button class='buttonDlt'> delete </button> </td>
+                    <td> <%= button_to 'Delete', food_path(food), method: :delete, class:'buttonDlt' %>  </td>
                 </tr>
             <% end %>
         </table>
