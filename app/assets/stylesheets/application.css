@@ -25,12 +25,16 @@ th {
     background: rgb(73, 73, 73);
     color: #fff;
     padding: 0.2rem;
+    width: 33%;
+    max-width: 33%;
 }
 
 td {
     background: #111;
     color: #fff;
     padding: 0.2rem;
+    max-width: 33%;
+    width: 33%;
 }
 
 table {
@@ -48,4 +52,102 @@ table {
 
 .container {
     padding: 10px 5%;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    color: #111;
+    background: rgb(122, 120, 120);
+    padding: 0.3rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.form {
+    /* margin: auto; */
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.formInp {
+    width: 100%;
+    padding: 0.2rem;
+    /* margin: auto; */
+}
+
+.rscNm {
+    font-size: 20px;
+}
+
+.resDv {
+    padding: 1% 5%;
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+
+.resipe {
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    text-align: center;
+}
+
+.linespac {
+    line-height: 44px;
+}
+
+.linespac2 {
+    line-height: 30px;
+}
+
+.button2 {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.link_to {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.jstcnt {
+    justify-content: space-between;
+}
+
+.addFood {
+    background: rgb(113, 113, 165);
+    border: none;
+    border-radius: 6px;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    color: #fff;
+}
+
+.formDiv {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    background: none;
+    color: #000;
+    text-decoration: underline;
+    border: none;
 }
