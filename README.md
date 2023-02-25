@@ -62,13 +62,10 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">Ruby on rails</a></li>
   </ul>
 </details>
 
@@ -83,7 +80,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+### Key features
 
 - User authentication
 - Storing data to database
@@ -188,8 +185,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 Kenny Egun
 
 - GitHub: [@githubhandle](https://github.com/kennyegun24)
@@ -207,8 +202,6 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Improve styling]**
 - [ ] **[Add extra functionalities]**
@@ -229,8 +222,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -239,9 +230,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
 I would like to thank...
+- MicroverseInc
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,13 +242,15 @@ I would like to thank...
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[Question_1]**
+How can Iintegrate the app to my development database?
 
   - [Answer_1]
+  All you need to do is to change my database username and password in database.yml file in the config folder to suite your database
 
 - **[Question_2]**
-
+What test library did you use?
   - [Answer_2]
-
+Rspec was used
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
