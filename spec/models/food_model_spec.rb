@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   before :each do
     @user = User.new(id: 1, name: 'Kenny')
-    @food = Food.new(id: 1, user: @user, price: 1, quantity: 1, name: 'Random', measuerment_unit: 1 )
+    @food = Food.new(id: 1, user: @user, price: 1, quantity: 1, name: 'Random', measuerment_unit: 1)
   end
 
   it 'name must not be blank' do

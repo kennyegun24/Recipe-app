@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class ShoppingListsController < ApplicationController
   def index
     @recipe_foods = RecipeFood.includes(:food, :recipe)
