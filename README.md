@@ -25,14 +25,6 @@ OPTIONAL SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -60,29 +52,20 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Recipe app <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Recipe app]** is a fullstack website that was developed to store its users recipes, food and gorceries list to the database...
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">Ruby on rails</a></li>
   </ul>
 </details>
 
@@ -97,21 +80,12 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+### Key features
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- User authentication
+- Storing data to database
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,19 +177,17 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 Kenny Egun
 
-👤 **Author1**
+- GitHub: [@githubhandle](https://github.com/kennyegun24)
+- Twitter: [@twitterhandle](https://twitter.com/kenny_eliasUTD)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 JA MANU
 
-👤 **Author2**
+  - GitHub: [@jaamanu](https://github.com/jaamanu)
+  - Twitter: [@JamesAsibeyManu](https://twitter.com/JamesAsibeyManu)
+  - LinkedIn: [jamesasibeymanyu](https://linkedin.com/in/jamesasibeymanu)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +195,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Improve styling]**
+- [ ] **[Add extra functionalities]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,8 +214,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -255,9 +222,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
 I would like to thank...
+- MicroverseInc
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -268,13 +234,15 @@ I would like to thank...
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[Question_1]**
+How can Iintegrate the app to my development database?
 
   - [Answer_1]
+  All you need to do is to change my database username and password in database.yml file in the config folder to suite your database
 
 - **[Question_2]**
-
+What test library did you use?
   - [Answer_2]
-
+Rspec was used
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
