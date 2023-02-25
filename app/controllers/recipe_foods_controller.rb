@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class RecipeFoodsController < ApplicationController
   def new
     @recipe = Recipe.find(params[:recipe_id])

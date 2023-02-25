@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class RecipesController < ApplicationController
   def index
     @user = User.find(current_user.id)
